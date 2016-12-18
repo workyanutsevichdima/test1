@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+
+	<script>
+	// SVG Polyfill for IE
+	!function(root,factory){"function"==typeof define&&define.amd?define([],function(){return root.svg4everybody=factory()}):"object"==typeof exports?module.exports=factory():root.svg4everybody=factory()}(this,function(){function embed(svg,target){if(target){var fragment=document.createDocumentFragment(),viewBox=!svg.getAttribute("viewBox")&&target.getAttribute("viewBox");viewBox&&svg.setAttribute("viewBox",viewBox);for(var clone=target.cloneNode(!0);clone.childNodes.length;){fragment.appendChild(clone.firstChild)}svg.appendChild(fragment)}}function loadreadystatechange(xhr){xhr.onreadystatechange=function(){if(4===xhr.readyState){var cachedDocument=xhr._cachedDocument;cachedDocument||(cachedDocument=xhr._cachedDocument=document.implementation.createHTMLDocument(""),cachedDocument.body.innerHTML=xhr.responseText,xhr._cachedTarget={}),xhr._embeds.splice(0).map(function(item){var target=xhr._cachedTarget[item.id];target||(target=xhr._cachedTarget[item.id]=cachedDocument.getElementById(item.id)),embed(item.svg,target)})}},xhr.onreadystatechange()}function svg4everybody(rawopts){function oninterval(){for(var index=0;index<uses.length;){var use=uses[index],svg=use.parentNode;if(svg&&/svg/i.test(svg.nodeName)){var src=use.getAttribute("xlink:href");if(polyfill&&(!opts.validate||opts.validate(src,svg,use))){svg.removeChild(use);var srcSplit=src.split("#"),url=srcSplit.shift(),id=srcSplit.join("#");if(url.length){var xhr=requests[url];xhr||(xhr=requests[url]=new XMLHttpRequest(),xhr.open("GET",url),xhr.send(),xhr._embeds=[]),xhr._embeds.push({svg:svg,id:id}),loadreadystatechange(xhr)}else{embed(svg,document.getElementById(id))}}}else{++index}}requestAnimationFrame(oninterval,67)}var polyfill,opts=Object(rawopts),newerIEUA=/\bTrident\/[567]\b|\bMSIE (?:9|10)\.0\b/,webkitUA=/\bAppleWebKit\/(\d+)\b/,olderEdgeUA=/\bEdge\/12\.(\d+)\b/;polyfill="polyfill"in opts?opts.polyfill:newerIEUA.test(navigator.userAgent)||(navigator.userAgent.match(olderEdgeUA)||[])[1]<10547||(navigator.userAgent.match(webkitUA)||[])[1]<537;var requests={},requestAnimationFrame=window.requestAnimationFrame||setTimeout,uses=document.getElementsByTagName("use");polyfill&&oninterval()}return svg4everybody});svg4everybody()
+	</script>
+
+</head>
+
+	<body>
+
+		<header class="header">
+			<div class="container">
+				<a href="#" class="logo"></a>
+				<button class="toggle-nav js-open-popup" data-target="mob-nav"><svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-toggle"></use></svg></button>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-news"></use></svg>
+								Новости
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-posts"></use></svg>
+								Статьи
+							</a>
+						</li>
+						<li class="nav__item nav__item--current">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-base"></use></svg>
+								База знаний
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+								Галерея
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-video"></use></svg>
+								Видео
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<ul class="nav-tools">
+					<li class="nav-tools__item">
+						<a href="#" class="nav-tools__link">
+							<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-enter"></use></svg>
+							Вход
+						</a>
+					</li>
+					<li class="nav-tools__item">
+						<a href="#" class="nav-tools__link">
+							<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-plus"></use></svg>
+							Регистрация
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</header>
+
+		<div class="popup mobile-nav" id="mob-nav">
+			<button class="mobile-nav__close-nav js-close-popup"><svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-close"></use></svg></button>
+			<div class="mobile-nav__inner js-popup-container">
+				
+				<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-news"></use></svg>
+									Новости
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-posts"></use></svg>
+									Статьи
+								</a>
+							</li>
+							<li class="nav__item nav__item--current">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-base"></use></svg>
+									База знаний
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+									Галерея
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-video"></use></svg>
+									Видео
+								</a>
+							</li>
+						</ul>
+				</nav>
+
+				<ul class="nav-tools">
+						<li class="nav-tools__item">
+							<a href="#" class="nav-tools__link">
+								<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-enter"></use></svg>
+								Вход
+							</a>
+						</li>
+						<li class="nav-tools__item">
+							<a href="#" class="nav-tools__link">
+								<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-plus"></use></svg>
+								Регистрация
+							</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="container">
+				
+
+				
+
+			<section class="section section--all-photos js-section-preview">
+					<h2 class="section__title"><svg class="section__title-icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>Фотогалерея</h2>
+					<div class="section__controls">
+						<div class="buttons-filter">
+							<span class="buttons-filter__title">Фильтр:</span>
+							<select name="" id="">
+								<option value="">По размеру</option>
+							</select>
+							<select name="" id="">
+								<option value="">По художнику</option>
+							</select>
+							<select name="" id="">
+								<option value="">По тегу</option>
+							</select>
+						</div>
+					</div>
+					<div class="tags">
+						<span class="tags__title">Теги:</span>
+						<div class="tags__item">
+							<span class="tags__text">PussyKiller</span>
+							<button class="tags__remove"><svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-close"></use></svg></button>
+						</div>
+						<div class="tags__item">
+							<span class="tags__text">Guruman</span>
+							<button class="tags__remove"><svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-close"></use></svg></button>
+						</div>
+					</div>
+					<ul class="post-preview">
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper js-open-popup" data-target="popup-video" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-fan-art"></use></svg>
+									Фан Арт
+								</div>
+								<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper js-open-popup" data-target="popup-video" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+									Скриншоты
+								</div>
+								<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper js-open-popup" data-target="popup-video" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-cosplay"></use></svg>
+									Косплей
+								</div>
+								<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper js-open-popup" data-target="popup-video" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-fan-art"></use></svg>
+									Фан Арт
+								</div>
+								<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper js-open-popup" data-target="popup-video" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+									Скриншоты
+								</div>
+								<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper js-open-popup" data-target="popup-video" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-cosplay"></use></svg>
+									Косплей
+								</div>
+								<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+							</a>
+						</li>
+						
+					</ul>
+
+					<div class="pagination">
+						<button class="pagination__button pagination__button--prev"><svg><use xlink:href="svg/svg.svg#icon-arrow"></use></svg></button>
+						<ul class="pagination__list">
+							<li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+							<li class="pagination__item pagination__item--current"><a class="pagination__link" href="#">3</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+						</ul>
+						<button class="pagination__button pagination__button--next"><svg><use xlink:href="svg/svg.svg#icon-arrow"></use></svg></button>
+					</div>
+				</section>
+
+				<section class="section section--posts js-section-preview">
+					<h2 class="section__title"><svg class="section__title-icon"><use xlink:href="svg/svg.svg#icon-posts"></use></svg>Статьи</h2>
+					<ul class="post-preview">
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								<div class="post-preview__text-block post-preview__text-block--has-desc">
+									<h3 class="post-preview__title js-post-preview-title">Патч от 19 февраля</h3>
+									<p class="post-preview__desc">Разработчики обновляют клиент Overwatch почти каждый день, что не может не радовать.</p>
+								</div>
+								<div class="post-preview__more-icon"><svg><use xlink:href="svg/svg.svg#icon-arrow"></use></svg></div>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								<div class="post-preview__text-block post-preview__text-block--has-desc">
+									<h3 class="post-preview__title js-post-preview-title">Eurogamer, Каплан, бета-testing, Каплан</h3>
+									<p class="post-preview__desc">Разработчики обновляют клиент Overwatch почти каждый день, что не может не радовать Разработчики обновляют.</p>
+								</div>
+								<div class="post-preview__more-icon"><svg><use xlink:href="svg/svg.svg#icon-arrow"></use></svg></div>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								<div class="post-preview__text-block post-preview__text-block--has-desc">
+									<h3 class="post-preview__title js-post-preview-title">Патч от 19 февраля</h3>
+									<p class="post-preview__desc">Разработчики обновляют клиент Overwatch почти каждый день, что не может не радовать.</p>
+								</div>
+								<div class="post-preview__more-icon"><svg><use xlink:href="svg/svg.svg#icon-arrow"></use></svg></div>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								<div class="post-preview__text-block post-preview__text-block--has-desc">
+									<h3 class="post-preview__title js-post-preview-title">Патч от 19 февраля</h3>
+									<p class="post-preview__desc">Разработчики обновляют клиент Overwatch почти каждый день, что не может не радовать.</p>
+								</div>
+								<div class="post-preview__more-icon"><svg><use xlink:href="svg/svg.svg#icon-arrow"></use></svg></div>
+							</a>
+						</li>
+					</ul>
+
+					
+
+				</section>
+
+
+				<section class="section section--video js-section-preview">
+					<h2 class="section__title"><svg class="section__title-icon"><use xlink:href="svg/svg.svg#icon-video"></use></svg>Последние видео</h2>
+
+					<div class="section__controls">
+						<div class="buttons-control">
+							<button class="button-control button-control--prev js-slider-button-prev"><svg><use xlink:href="svg/svg.svg#icon-arrow"></use></svg></button>
+							<button class="button-control button-control--next js-slider-button-next"><svg><use xlink:href="svg/svg.svg#icon-arrow"></use></svg></button>
+						</div>
+						
+					</div>
+					<ul class="post-preview js-video-slider">
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								<div class="post-preview__text-block">
+									<h3 class="post-preview__title post-preview__title--has-icon js-post-preview-title">
+										Патч от 19 февраля
+										<svg class="post-preview__title__icon"><use xlink:href="svg/svg.svg#icon-play"></use></svg>
+									</h3>
+									
+								</div>
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-overview"></use></svg>
+									Обзоры
+								</div>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								<div class="post-preview__text-block">
+									<h3 class="post-preview__title post-preview__title--has-icon js-post-preview-title">
+										Eurogamer, Каплан, бета-testing, Каплан
+										<svg class="post-preview__title__icon"><use xlink:href="svg/svg.svg#icon-play"></use></svg>
+									</h3>
+									
+								</div>
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-overview"></use></svg>
+									Обзоры
+								</div>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/news-preview-1.jpg" alt="">
+								<div class="post-preview__text-block">
+									<h3 class="post-preview__title post-preview__title--has-icon js-post-preview-title">
+										Патч от 19 февраля
+										<svg class="post-preview__title__icon"><use xlink:href="svg/svg.svg#icon-play"></use></svg>
+									</h3>
+									
+								</div>
+								<div class="post-preview__cat post-preview__cat--gameplay">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-gameplay"></use></svg>
+									Геймплей
+								</div>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/main-banner-slide-1.jpg" alt="">
+								<div class="post-preview__text-block">
+									<h3 class="post-preview__title post-preview__title--has-icon js-post-preview-title">
+										Патч от 19 февраля
+										<svg class="post-preview__title__icon"><use xlink:href="svg/svg.svg#icon-play"></use></svg>
+									</h3>
+								</div>
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-overview"></use></svg>
+									Обзоры
+								</div>
+							</a>
+						</li>
+						<li class="post-preview__item">
+							<a class="post-preview__link-wrapper" href="#">
+								<img class="post-preview__img" src="/uploads/main-banner-slide-1.jpg" alt="">
+								<div class="post-preview__text-block">
+									<h3 class="post-preview__title post-preview__title--has-icon js-post-preview-title">
+										Патч от 19 февраля
+										<svg class="post-preview__title__icon"><use xlink:href="svg/svg.svg#icon-play"></use></svg>
+									</h3>
+								</div>
+								<div class="post-preview__cat post-preview__cat--overview">
+									<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-overview"></use></svg>
+									Обзоры
+								</div>
+							</a>
+						</li>
+					</ul>
+				</section>
+
+
+				
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				
+				<div class="copyright">
+					&copy; 2014-2015 
+					<a class="copyright__link" href="#">HeroesOverwatch.ru</a>
+				</div>
+
+				<div class="nav-footer">
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">Медиа</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Галерея</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Видео</a>
+						</li>
+					</ul>
+
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">Новости</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Overwatch</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Разное</a>
+						</li>
+					</ul>
+
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">База знаний</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Герои</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Карты</a>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="soc-links">
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-vk"></use></svg>
+						</a>
+					</li>
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-fb"></use></svg>
+						</a>
+					</li>
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-inst"></use></svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<div class="popup popup--video" id="popup-video">
+			<div class="popup__overlay"></div>
+			<div class="popup__content">
+				<div class="container js-popup-container">
+					<ul class="video-desc">
+						<li class="video-desc__item">
+							<span class="video-desc__title">Художник:</span>
+							<a href="" class="video-desc__value">Mini_90</a>
+						</li>
+						<li class="video-desc__item">
+							<span class="video-desc__title">Тег:</span>
+							<a href="" class="video-desc__value">Winston</a>
+						</li>
+					</ul>
+					<button class="popup__close-button js-close-popup"><svg><use xlink:href="svg/svg.svg#icon-close"></use></svg></button>
+					<iframe id="popup-video-player" width="100%" height="100%" src="https://www.youtube.com/embed/ZyBUMabtslI" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script>
+		// //polyfill for browsers which doesn't support "object-fit" property
+		var objectFitImages=function(){"use strict";var e="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";var t=/(object-fit|object-position)\s*:\s*([^;$"'\s]+)/g;var i="object-fit"in document.createElement("i").style;var n=false;function r(e){var i=getComputedStyle(e).fontFamily;var n;var r={};while((n=t.exec(i))!==null){r[n[1]]=n[2]}return r}function o(t,i){var n=r(t);if(!n["object-fit"]||n["object-fit"]==="fill"){return}i=i||t.currentSrc||t.src;if(t.srcset){t.srcset=""}if(!t[e]){t.src=e;a(t)}t[e]=t[e]||{s:i};t.style.backgroundImage="url("+i+")";t.style.backgroundPosition=n["object-position"]||"center";t.style.backgroundRepeat="no-repeat";if(n["object-fit"].indexOf("scale-down")<0){t.style.backgroundSize=n["object-fit"].replace("none","auto")}else{if(!t[e].i){t[e].i=new Image;t[e].i.src=i}(function o(){if(t[e].i.naturalWidth){if(t[e].i.naturalWidth>t.width||t[e].i.naturalHeight>t.height){t.style.backgroundSize="contain"}else{t.style.backgroundSize="auto"}return}setTimeout(o,100)})()}}function a(t){var i={get:function(){return t[e].s},set:function(i){delete t[e].i;return o(t,i)}};Object.defineProperty(t,"src",i);Object.defineProperty(t,"currentSrc",{get:i.get})}function c(e){window.addEventListener("resize",f.bind(null,e))}function u(e){if(e.target.tagName==="IMG"){o(e.target)}}function f(e,t){if(i){return false}var r=!n&&!e;t=t||{};e=e||"img";if(typeof e==="string"){e=document.querySelectorAll("img")}else if(!e.length){e=[e]}for(var a=0;a<e.length;a++){o(e[a])}if(r){document.body.addEventListener("load",u,true);n=true;e="img"}if(t.watchMQ){c(e)}}return f}();
+		objectFitImages()
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>	
+</html>

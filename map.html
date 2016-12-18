@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+
+	<script>
+	// SVG Polyfill for IE
+	!function(root,factory){"function"==typeof define&&define.amd?define([],function(){return root.svg4everybody=factory()}):"object"==typeof exports?module.exports=factory():root.svg4everybody=factory()}(this,function(){function embed(svg,target){if(target){var fragment=document.createDocumentFragment(),viewBox=!svg.getAttribute("viewBox")&&target.getAttribute("viewBox");viewBox&&svg.setAttribute("viewBox",viewBox);for(var clone=target.cloneNode(!0);clone.childNodes.length;){fragment.appendChild(clone.firstChild)}svg.appendChild(fragment)}}function loadreadystatechange(xhr){xhr.onreadystatechange=function(){if(4===xhr.readyState){var cachedDocument=xhr._cachedDocument;cachedDocument||(cachedDocument=xhr._cachedDocument=document.implementation.createHTMLDocument(""),cachedDocument.body.innerHTML=xhr.responseText,xhr._cachedTarget={}),xhr._embeds.splice(0).map(function(item){var target=xhr._cachedTarget[item.id];target||(target=xhr._cachedTarget[item.id]=cachedDocument.getElementById(item.id)),embed(item.svg,target)})}},xhr.onreadystatechange()}function svg4everybody(rawopts){function oninterval(){for(var index=0;index<uses.length;){var use=uses[index],svg=use.parentNode;if(svg&&/svg/i.test(svg.nodeName)){var src=use.getAttribute("xlink:href");if(polyfill&&(!opts.validate||opts.validate(src,svg,use))){svg.removeChild(use);var srcSplit=src.split("#"),url=srcSplit.shift(),id=srcSplit.join("#");if(url.length){var xhr=requests[url];xhr||(xhr=requests[url]=new XMLHttpRequest(),xhr.open("GET",url),xhr.send(),xhr._embeds=[]),xhr._embeds.push({svg:svg,id:id}),loadreadystatechange(xhr)}else{embed(svg,document.getElementById(id))}}}else{++index}}requestAnimationFrame(oninterval,67)}var polyfill,opts=Object(rawopts),newerIEUA=/\bTrident\/[567]\b|\bMSIE (?:9|10)\.0\b/,webkitUA=/\bAppleWebKit\/(\d+)\b/,olderEdgeUA=/\bEdge\/12\.(\d+)\b/;polyfill="polyfill"in opts?opts.polyfill:newerIEUA.test(navigator.userAgent)||(navigator.userAgent.match(olderEdgeUA)||[])[1]<10547||(navigator.userAgent.match(webkitUA)||[])[1]<537;var requests={},requestAnimationFrame=window.requestAnimationFrame||setTimeout,uses=document.getElementsByTagName("use");polyfill&&oninterval()}return svg4everybody});svg4everybody()
+	</script>
+
+</head>
+
+	<body>
+
+		<header class="header">
+			<div class="container">
+				<a href="#" class="logo"></a>
+				<button class="toggle-nav js-open-popup" data-target="mob-nav"><svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-toggle"></use></svg></button>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-news"></use></svg>
+								Новости
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-posts"></use></svg>
+								Статьи
+							</a>
+						</li>
+						<li class="nav__item nav__item--current">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-base"></use></svg>
+								База знаний
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+								Галерея
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-video"></use></svg>
+								Видео
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<ul class="nav-tools">
+					<li class="nav-tools__item">
+						<a href="#" class="nav-tools__link">
+							<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-enter"></use></svg>
+							Вход
+						</a>
+					</li>
+					<li class="nav-tools__item">
+						<a href="#" class="nav-tools__link">
+							<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-plus"></use></svg>
+							Регистрация
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</header>
+
+		<div class="popup mobile-nav" id="mob-nav">
+			<button class="mobile-nav__close-nav js-close-popup"><svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-close"></use></svg></button>
+			<div class="mobile-nav__inner js-popup-container">
+				
+				<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-news"></use></svg>
+									Новости
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-posts"></use></svg>
+									Статьи
+								</a>
+							</li>
+							<li class="nav__item nav__item--current">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-base"></use></svg>
+									База знаний
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+									Галерея
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-video"></use></svg>
+									Видео
+								</a>
+							</li>
+						</ul>
+				</nav>
+
+				<ul class="nav-tools">
+						<li class="nav-tools__item">
+							<a href="#" class="nav-tools__link">
+								<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-enter"></use></svg>
+								Вход
+							</a>
+						</li>
+						<li class="nav-tools__item">
+							<a href="#" class="nav-tools__link">
+								<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-plus"></use></svg>
+								Регистрация
+							</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content map-page">
+			
+				
+
+				<div class="section section--map-page map-page">
+
+					<div class="map-page__full-screen-preview" style="background-image: url(../uploads/full-screen-map-preview-1.jpg)">
+						<div class="container">
+							<h1 class="map-page__title">Кингс Роу</h1>
+							<span class="map-page__country">Англия</span>
+						</div>
+					</div>
+					
+						
+					<div class="map-page__content">
+						<div class="container">
+							<div class="map-page__content__left">
+								<h2>Описание</h2>
+								<p><span class="mark-text">Кингс Роу</span> — гибридная карта, сочетающая в себе режимы Захват точек и Сопровождение. Атакующая команда должна захватить машину с устройством ЭМИ и сопроводить её к центру завода в конце карты, а обороняющаяся команда должна ей помешать.</p>
+								<h2>Факты</h2>
+								<ul class="facts">
+									<li class="facts__item">
+										<p>Кингс Роу в списке мест, где побывали Турбосвин и Крысавчик в ходе своего преступного турне.</p>
+									</li>
+									<li class="facts__item">
+										<p>Главным вдохновением для создания города был Лондон.</p>
+									</li>
+									<li class="facts__item">
+										<p>Действие короткометражки «Жизнь и смерть» происходит именно на этой карте.</p>
+									</li>
+								</ul>
+							</div>
+							<div class="map-page__content__right">
+								<h2>История</h2>
+								<p>Кингс Роу - это британский город, жилые кварталы которого плавно перетекают в промышленную часть города. Здесь расположено множество пабов, магазинов и отелей. На центральной площади можно найти копию Биг-Бена с цифровым табло и памятник Текхарте Мондатте, установленный в память о великом духовном лидере омников после того, как он был убит Амели Лакруа. Так же около выхода из отеля можно видеть его портрет, окружённый свечами.</p>
+								<p>После окончания Восстания машин напряжение между людьми и роботами, проживающими в городе, сильно возросло. Права роботов начали ущемляться. На многих домах и заведениях появились таблички, запрещающие омникам входить внутрь и даже угрожающие надписи, призывающие разбирать всех роботов на части. Известен случай открытого нападения на робота прямо на Кингс Роу - к счастью, омника спас бывший агент Overwatch Вильгельм Райнхардт.[1] Омники стали скрываться в метро и в подземном городе, который они построили сами. Однако, нашлись люди, которые решили отправить устройство с ЭМИ в самое сердце завода, где находится вход в тайный город, дабы выкурить оттуда омников.</p>
+							</div>
+						</div>
+						<div class="container container--match">
+							<h2>Матч</h2>	
+							<ul class="match">
+								<li class="match__item">
+									<span class="match__number">3</span>
+									<span class="match__desc">Контрольные<br>точки</span>
+								</li>
+								<li class="match__item">
+									<span class="match__number">+3</span>
+									<span class="match__desc">Доп. время<br>за 1 точку</span>
+								</li>
+								<li class="match__item">
+									<span class="match__number">+2</span>
+									<span class="match__desc">Доп. время<br>за 2 точку</span>
+								</li>
+								<li class="match__item">
+									<span class="match__number">10</span>
+									<span class="match__desc">Примерная длительность матча</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				
+				</div>
+
+				<section class="screenshots">
+					<div class="container">
+					<header class="screenshots__header">
+						<h2>Скриншоты</h2>
+						<span class="screenshots__label">Галерея</span>
+					</header>
+					<div class="screenshots__list">
+							<a class="fancybox screenshots__item" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg" title="Morning Godafoss (Brads5)">
+								<img class="screenshots__img" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="" />
+							</a>
+							<a class="fancybox screenshots__item" rel="gallery1" href="http://farm4.staticflickr.com/3691/10185053775_701272da37_b.jpg" title="Vertical - Special Edition! (cedarsphoto)">
+								<img class="screenshots__img" src="http://farm4.staticflickr.com/3691/10185053775_701272da37_m.jpg" alt="" />
+							</a>
+							<a class="fancybox screenshots__item" rel="gallery1" href="http://farm1.staticflickr.com/574/22407305427_69cc6e845f_b.jpg" title="Racing against the Protons (tom.leuzi)">
+								<img class="screenshots__img" src="http://farm1.staticflickr.com/574/22407305427_69cc6e845f_m.jpg" alt="" />
+							</a>
+							<a class="fancybox screenshots__item" rel="gallery1" href="http://farm1.staticflickr.com/291/18653638823_a86b58523c_b.jpg" title="Lupines (Kiddi Einars)">
+								<img class="screenshots__img" src="http://farm1.staticflickr.com/291/18653638823_a86b58523c_m.jpg" alt="" />
+							</a>
+							<a class="fancybox screenshots__item" rel="gallery1" href="http://farm1.staticflickr.com/574/22407305427_69cc6e845f_b.jpg" title="Racing against the Protons (tom.leuzi)">
+								<img class="screenshots__img" src="http://farm1.staticflickr.com/574/22407305427_69cc6e845f_m.jpg" alt="" />
+							</a>
+							<a class="fancybox screenshots__item" rel="gallery1" href="http://farm1.staticflickr.com/291/18653638823_a86b58523c_b.jpg" title="Lupines (Kiddi Einars)">
+								<img class="screenshots__img" src="http://farm1.staticflickr.com/291/18653638823_a86b58523c_m.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+				</section>
+
+				
+				
+			
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				
+				<div class="copyright">
+					&copy; 2014-2015 
+					<a class="copyright__link" href="#">HeroesOverwatch.ru</a>
+				</div>
+
+				<div class="nav-footer">
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">Медиа</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Галерея</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Видео</a>
+						</li>
+					</ul>
+
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">Новости</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Overwatch</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Разное</a>
+						</li>
+					</ul>
+
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">База знаний</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Герои</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Карты</a>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="soc-links">
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-vk"></use></svg>
+						</a>
+					</li>
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-fb"></use></svg>
+						</a>
+					</li>
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-inst"></use></svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+	</body>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script>
+		// //polyfill for browsers which doesn't support "object-fit" property
+		var objectFitImages=function(){"use strict";var e="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";var t=/(object-fit|object-position)\s*:\s*([^;$"'\s]+)/g;var i="object-fit"in document.createElement("i").style;var n=false;function r(e){var i=getComputedStyle(e).fontFamily;var n;var r={};while((n=t.exec(i))!==null){r[n[1]]=n[2]}return r}function o(t,i){var n=r(t);if(!n["object-fit"]||n["object-fit"]==="fill"){return}i=i||t.currentSrc||t.src;if(t.srcset){t.srcset=""}if(!t[e]){t.src=e;a(t)}t[e]=t[e]||{s:i};t.style.backgroundImage="url("+i+")";t.style.backgroundPosition=n["object-position"]||"center";t.style.backgroundRepeat="no-repeat";if(n["object-fit"].indexOf("scale-down")<0){t.style.backgroundSize=n["object-fit"].replace("none","auto")}else{if(!t[e].i){t[e].i=new Image;t[e].i.src=i}(function o(){if(t[e].i.naturalWidth){if(t[e].i.naturalWidth>t.width||t[e].i.naturalHeight>t.height){t.style.backgroundSize="contain"}else{t.style.backgroundSize="auto"}return}setTimeout(o,100)})()}}function a(t){var i={get:function(){return t[e].s},set:function(i){delete t[e].i;return o(t,i)}};Object.defineProperty(t,"src",i);Object.defineProperty(t,"currentSrc",{get:i.get})}function c(e){window.addEventListener("resize",f.bind(null,e))}function u(e){if(e.target.tagName==="IMG"){o(e.target)}}function f(e,t){if(i){return false}var r=!n&&!e;t=t||{};e=e||"img";if(typeof e==="string"){e=document.querySelectorAll("img")}else if(!e.length){e=[e]}for(var a=0;a<e.length;a++){o(e[a])}if(r){document.body.addEventListener("load",u,true);n=true;e="img"}if(t.watchMQ){c(e)}}return f}();
+		objectFitImages()
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>	
+</html>

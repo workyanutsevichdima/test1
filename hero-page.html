@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+
+	<script>
+	// SVG Polyfill for IE
+	!function(root,factory){"function"==typeof define&&define.amd?define([],function(){return root.svg4everybody=factory()}):"object"==typeof exports?module.exports=factory():root.svg4everybody=factory()}(this,function(){function embed(svg,target){if(target){var fragment=document.createDocumentFragment(),viewBox=!svg.getAttribute("viewBox")&&target.getAttribute("viewBox");viewBox&&svg.setAttribute("viewBox",viewBox);for(var clone=target.cloneNode(!0);clone.childNodes.length;){fragment.appendChild(clone.firstChild)}svg.appendChild(fragment)}}function loadreadystatechange(xhr){xhr.onreadystatechange=function(){if(4===xhr.readyState){var cachedDocument=xhr._cachedDocument;cachedDocument||(cachedDocument=xhr._cachedDocument=document.implementation.createHTMLDocument(""),cachedDocument.body.innerHTML=xhr.responseText,xhr._cachedTarget={}),xhr._embeds.splice(0).map(function(item){var target=xhr._cachedTarget[item.id];target||(target=xhr._cachedTarget[item.id]=cachedDocument.getElementById(item.id)),embed(item.svg,target)})}},xhr.onreadystatechange()}function svg4everybody(rawopts){function oninterval(){for(var index=0;index<uses.length;){var use=uses[index],svg=use.parentNode;if(svg&&/svg/i.test(svg.nodeName)){var src=use.getAttribute("xlink:href");if(polyfill&&(!opts.validate||opts.validate(src,svg,use))){svg.removeChild(use);var srcSplit=src.split("#"),url=srcSplit.shift(),id=srcSplit.join("#");if(url.length){var xhr=requests[url];xhr||(xhr=requests[url]=new XMLHttpRequest(),xhr.open("GET",url),xhr.send(),xhr._embeds=[]),xhr._embeds.push({svg:svg,id:id}),loadreadystatechange(xhr)}else{embed(svg,document.getElementById(id))}}}else{++index}}requestAnimationFrame(oninterval,67)}var polyfill,opts=Object(rawopts),newerIEUA=/\bTrident\/[567]\b|\bMSIE (?:9|10)\.0\b/,webkitUA=/\bAppleWebKit\/(\d+)\b/,olderEdgeUA=/\bEdge\/12\.(\d+)\b/;polyfill="polyfill"in opts?opts.polyfill:newerIEUA.test(navigator.userAgent)||(navigator.userAgent.match(olderEdgeUA)||[])[1]<10547||(navigator.userAgent.match(webkitUA)||[])[1]<537;var requests={},requestAnimationFrame=window.requestAnimationFrame||setTimeout,uses=document.getElementsByTagName("use");polyfill&&oninterval()}return svg4everybody});svg4everybody()
+	</script>
+
+</head>
+
+	<body class="hero-page">
+
+		<header class="header">
+			<div class="container">
+				<a href="#" class="logo"></a>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-news"></use></svg>
+								Новости
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-posts"></use></svg>
+								Статьи
+							</a>
+						</li>
+						<li class="nav__item nav__item--current">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-base"></use></svg>
+								База знаний
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+								Галерея
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">
+								<svg class="nav__icon"><use xlink:href="svg/svg.svg#icon-video"></use></svg>
+								Видео
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<ul class="nav-tools">
+					<li class="nav-tools__item">
+						<a href="#" class="nav-tools__link">
+							<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-enter"></use></svg>
+							Вход
+						</a>
+					</li>
+					<li class="nav-tools__item">
+						<a href="#" class="nav-tools__link">
+							<svg class="nav-tools__icon"><use xlink:href="svg/svg.svg#icon-plus"></use></svg>
+							Регистрация
+						</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="/">Главная</a>
+						<span class="breadcrumbs__sep">></span>
+					</li>
+					<li class="breadcrumbs__item breadcrumbs__item--current">
+						<a class="breadcrumbs__link" href="#">База знаний</a>
+						<span class="breadcrumbs__sep">></span>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="content">
+			
+				
+
+				<div class="section section--hero-page hero-page">
+
+					<div class="hero-page__full-screen-preview" style="background-image: url(../uploads/full-screen-hero-1.jpg)">
+						<div class="container">
+							<h1 class="hero-page__title">Уинстон</h1>
+							
+						</div>
+					</div>
+					
+						
+					<div class="hero-page__content">
+						<div class="container">
+							
+							<div class="about-hero">
+								<div class="about-hero__title">
+									В основе любых открытий лежит воображение
+								</div>
+
+								<div class="about-hero__prev-text">
+									<p> Уинстон, сверхразумная генетически модифицированная горилла, — блестящий ученый и великий гуманист.</p>
+	   								<p>Лунная колония «Горизонт» была первым шагом человечества на пути к очередному этапу освоения космоса. Одними из ее обитателей были генетически модифицированные гориллы, на которых проводили эксперименты по выявлению эффектов длительного пребывания в космосе.</p>
+
+	   								<p>В ходе генной терапии у одной из горилл выявился настолько быстрый рост тканей мозга, что ее взял под опеку доктор Харольд Уинстон. Он обучал своего подопечного наукам и рассказывал о находчивости человеческой расы.</p>
+								</div>
+									
+								<div class="about-hero__full-text" id="about-hero-more-block" style="display: none">
+									<p> Уинстон, сверхразумная генетически модифицированная горилла, — блестящий ученый и великий гуманист.</p>
+	   								<p>Лунная колония «Горизонт» была первым шагом человечества на пути к очередному этапу освоения космоса. Одними из ее обитателей были генетически модифицированные гориллы, на которых проводили эксперименты по выявлению эффектов длительного пребывания в космосе.</p>
+
+	   								<p>В ходе генной терапии у одной из горилл выявился настолько быстрый рост тканей мозга, что ее взял под опеку доктор Харольд Уинстон. Он обучал своего подопечного наукам и рассказывал о находчивости человеческой расы.</p>
+								</div>
+									
+								<button class="about-hero__button" id="about-hero-more-icon"><svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-arrow-down"></use></svg></button>
+							</div>
+
+							<div class="char">
+								<ul class="char__list">
+									<li class="char__item">
+										<svg class="char__icon"><use xlink:href="svg/svg.svg#icon-char-1"></use></svg>
+										<span class="char__title">Настоящее имя:</span>
+										<span class="char__value">Уинстон</span>
+									</li>
+									<li class="char__item">
+										<svg class="char__icon"><use xlink:href="svg/svg.svg#icon-char-2"></use></svg>
+										<span class="char__title">Возраст:</span>
+										<span class="char__value">29 лет</span>
+									</li>
+									<li class="char__item">
+										<svg class="char__icon"><use xlink:href="svg/svg.svg#icon-char-3"></use></svg>
+										<span class="char__title">Род занятий:</span>
+										<span class="char__value">Ученый, искатель приключений</span>
+									</li>
+									<li class="char__item">
+										<svg class="char__icon"><use xlink:href="svg/svg.svg#icon-char-4"></use></svg>
+										<span class="char__title">Оперативная база:</span>
+										<span class="char__value">В прошлом - лунная колония "Горизонт"</span>
+									</li>
+									<li class="char__item">
+										<svg class="char__icon"><use xlink:href="svg/svg.svg#icon-char-5"></use></svg>
+										<span class="char__title">Принадлежность:</span>
+										<span class="char__value">В прошлом - overwatch</span>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="abilities">
+								<h2>Способности</h2>
+								<ul class="abilities__list">
+									<li class="abilities__item">
+										<img class="abilities__img" src="uploads/news-preview-1.jpg" alt="">
+										<span class="abilities__title">Пушка тесла</span>
+										<div class="abilities__full">
+											<div class="abilities__desc-wrapper">
+												<p class="abilities__desc">При зажатом спусковом крючке оружие Уинстона испускает электрические разряды.</p>
+											</div>
+											<ul class="abilities__chars">
+												<li class="abilities__chars__item"><span>Урон:</span><span>60-65</span></li>
+												<li class="abilities__chars__item"><span>бойма снарядов:</span><span>100</span></li>
+												<li class="abilities__chars__item"><span>Скорострельность:</span><span>20 в/с</span></li>
+												<li class="abilities__chars__item"><span>Перезарядка:</span><span>1,5 сек.</span></li>
+											</ul>
+											<ul class="abilities__interests">
+												<li class="abilities__interests__item"><p>Урон от Пушки Тесла игнорирует Энергетический барьер  Райнхардта и Отражение атак Гэндзи.</p></li>
+												<li class="abilities__interests__item"><p>Наносит урон всем врагам в области поражения.</p></li>
+												<li class="abilities__interests__item"><p>Не требует точного наведения на противника. Достаточно, чтобы он был в области зрения.</p></li>
+											</ul>
+										</div>
+									</li>
+									<li class="abilities__item">
+										<img class="abilities__img" src="uploads/news-preview-1.jpg" alt="">
+										<span class="abilities__title">Пушка тесла</span>
+										<div class="abilities__full">
+											<div class="abilities__desc-wrapper">
+												<p class="abilities__desc">При зажатом спусковом крючке оружие Уинстона испускает электрические разряды.</p>
+											</div>
+											<ul class="abilities__chars">
+												<li class="abilities__chars__item"><span>Урон:</span><span>60-65</span></li>
+												<li class="abilities__chars__item"><span>бойма снарядов:</span><span>100</span></li>
+												<li class="abilities__chars__item"><span>Скорострельность:</span><span>20 в/с</span></li>
+												<li class="abilities__chars__item"><span>Перезарядка:</span><span>1,5 сек.</span></li>
+											</ul>
+											<ul class="abilities__interests">
+												<li class="abilities__interests__item"><p>Урон от Пушки Тесла игнорирует Энергетический барьер  Райнхардта и Отражение атак Гэндзи.</p></li>
+												<li class="abilities__interests__item"><p>Наносит урон всем врагам в области поражения.</p></li>
+												<li class="abilities__interests__item"><p>Не требует точного наведения на противника. Достаточно, чтобы он был в области зрения.</p></li>
+											</ul>
+										</div>
+									</li>
+									<li class="abilities__item">
+										<img class="abilities__img" src="uploads/news-preview-1.jpg" alt="">
+										<span class="abilities__title">Пушка тесла</span>
+										<div class="abilities__full">
+											<div class="abilities__desc-wrapper">
+												<p class="abilities__desc">При зажатом спусковом крючке оружие Уинстона испускает электрические разряды.</p>
+											</div>
+											<ul class="abilities__chars">
+												<li class="abilities__chars__item"><span>Урон:</span><span>60-65</span></li>
+												<li class="abilities__chars__item"><span>бойма снарядов:</span><span>100</span></li>
+												<li class="abilities__chars__item"><span>Скорострельность:</span><span>20 в/с</span></li>
+												<li class="abilities__chars__item"><span>Перезарядка:</span><span>1,5 сек.</span></li>
+											</ul>
+											<ul class="abilities__interests">
+												<li class="abilities__interests__item"><p>Урон от Пушки Тесла игнорирует Энергетический барьер  Райнхардта и Отражение атак Гэндзи.</p></li>
+												<li class="abilities__interests__item"><p>Наносит урон всем врагам в области поражения.</p></li>
+												<li class="abilities__interests__item"><p>Не требует точного наведения на противника. Достаточно, чтобы он был в области зрения.</p></li>
+											</ul>
+										</div>
+									</li>
+									<li class="abilities__item">
+										<img class="abilities__img" src="uploads/news-preview-1.jpg" alt="">
+										<span class="abilities__title">Пушка тесла</span>
+										<div class="abilities__full">
+											<div class="abilities__desc-wrapper">
+												<p class="abilities__desc">При зажатом спусковом крючке оружие Уинстона испускает электрические разряды. При зажатом спусковом крючке оружие Уинстона испускает электрические разряды. При зажатом спусковом крючке оружие Уинстона испускает электрические разряды.</p>
+											</div>
+											<ul class="abilities__chars">
+												<li class="abilities__chars__item"><span>Урон:</span><span>60-65</span></li>
+												<li class="abilities__chars__item"><span>бойма снарядов:</span><span>100</span></li>
+												<li class="abilities__chars__item"><span>Скорострельность:</span><span>20 в/с</span></li>
+												<li class="abilities__chars__item"><span>Перезарядка:</span><span>1,5 сек.</span></li>
+											</ul>
+											<ul class="abilities__interests">
+												<li class="abilities__interests__item"><p>Урон от Пушки Тесла игнорирует Энергетический барьер  Райнхардта и Отражение атак Гэндзи.</p></li>
+												<li class="abilities__interests__item"><p>Наносит урон всем врагам в области поражения.</p></li>
+												<li class="abilities__interests__item"><p>Не требует точного наведения на противника. Достаточно, чтобы он был в области зрения.</p></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="base-chars">
+								<h2>Базовые характеристика</h2>
+								<ul class="base-chars__list">
+									<li class="base-chars__item">
+										<span class="base-chars__count">500</span>
+										<span class="base-chars__title">Сумарное<br>здоровье</span>
+									</li>
+									<li class="base-chars__item">
+										<span class="base-chars__count">400</span>
+										<span class="base-chars__title">Базовое<br>здоровье</span>
+									</li>
+									<li class="base-chars__item">
+										<span class="base-chars__count">100</span>
+										<span class="base-chars__title">Броня</span>
+									</li>
+									<li class="base-chars__item">
+										<span class="base-chars__count">0</span>
+										<span class="base-chars__title">Щиты</span>
+									</li>
+									<li class="base-chars__item">
+										<span class="base-chars__count">30</span>
+										<span class="base-chars__title">Быстрый удар</span>
+									</li>
+									<li class="base-chars__item">
+										<span class="base-chars__count">5,5</span>
+										<span class="base-chars__title">Скорость<br>передвижения<br>(м/с)</span>
+									</li>
+								</ul>
+							</div>
+
+							<div class="interaction">
+								<h2>Взаимодействие</h2>
+								<div class="interaction__block">
+									<ul class="interaction__list">
+										<span class="interaction__title">Силен<br>Против:</span>
+										<li class="interaction__title">
+											<a href="#" class="interaction__link"><img lass="interaction__icon" src="uploads/hero-icon-1.png" alt="" width="45" height="45"></a>
+										</li>
+										<li class="interaction__title">
+											<a href="#" class="interaction__link"><img lass="interaction__icon" src="uploads/hero-icon-1.png" alt="" width="45" height="45"></a>
+										</li>
+										<li class="interaction__title">
+											<a href="#" class="interaction__link"><img lass="interaction__icon" src="uploads/hero-icon-1.png" alt="" width="45" height="45"></a>
+										</li>
+										<li class="interaction__title">
+											<a href="#" class="interaction__link"><img lass="interaction__icon" src="uploads/hero-icon-1.png" alt="" width="45" height="45"></a>
+										</li>
+									</ul>
+									<ul class="interaction__list">
+										<span class="interaction__title">Слаб<br>против:</span>
+										<li class="interaction__title">
+											<a href="#" class="interaction__link"><img lass="interaction__icon" src="uploads/hero-icon-1.png" alt="" width="45" height="45"></a>
+										</li>
+										<li class="interaction__title">
+											<a href="#" class="interaction__link"><img lass="interaction__icon" src="uploads/hero-icon-1.png" alt="" width="45" height="45"></a>
+										</li>
+										<li class="interaction__title">
+											<a href="#" class="interaction__link"><img lass="interaction__icon" src="uploads/hero-icon-1.png" alt="" width="45" height="45"></a>
+										</li>
+										<li class="interaction__title">
+											<a href="#" class="interaction__link"><img lass="interaction__icon" src="uploads/hero-icon-1.png" alt="" width="45" height="45"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						<section class="section section--all-videos js-section-preview hero-page__gallery">
+							<h2>Галерея Винстона</h2>
+							
+							<ul class="post-preview">
+								<li class="post-preview__item">
+							
+									<a class="fancybox post-preview__link-wrapper" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg">
+										<img class="post-preview__img" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="">
+										
+										<div class="post-preview__cat post-preview__cat--overview">
+											<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-fan-art"></use></svg>
+											Фан Арт
+										</div>
+										<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+									</a>
+								</li>
+								<li class="post-preview__item">
+									<a class="fancybox post-preview__link-wrapper" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg">
+										<img class="post-preview__img" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="">
+										
+										<div class="post-preview__cat post-preview__cat--overview">
+											<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-cosplay"></use></svg>
+											Косплей
+										</div>
+										<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+									</a>
+								</li>
+								<li class="post-preview__item">
+									<a class="fancybox post-preview__link-wrapper" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg">
+										<img class="post-preview__img" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="">
+										
+										<div class="post-preview__cat post-preview__cat--overview">
+											<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+											Скриншот
+										</div>
+										<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+									</a>
+								</li>
+								<li class="post-preview__item">
+									<a class="fancybox post-preview__link-wrapper" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg">
+										<img class="post-preview__img" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="">
+										
+										<div class="post-preview__cat post-preview__cat--overview">
+											<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+											Скриншот
+										</div>
+										<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+									</a>
+								</li>
+								<li class="post-preview__item">
+									<a class="fancybox post-preview__link-wrapper" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg">
+										<img class="post-preview__img" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="">
+										
+										<div class="post-preview__cat post-preview__cat--overview">
+											<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-dossier"></use></svg>
+											Досье
+										</div>
+										<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+									</a>
+								</li>
+								<li class="post-preview__item">
+									<a class="fancybox post-preview__link-wrapper" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg">
+										<img class="post-preview__img" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="">
+										
+										<div class="post-preview__cat post-preview__cat--overview">
+											<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+											Скриншот
+										</div>
+										<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+									</a>
+								</li>
+								<li class="post-preview__item">
+									<a class="fancybox post-preview__link-wrapper" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg">
+										<img class="post-preview__img" src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="">
+										
+										<div class="post-preview__cat post-preview__cat--overview">
+											<svg class="post-preview__cat__icon"><use xlink:href="svg/svg.svg#icon-gallery"></use></svg>
+											Скриншот
+										</div>
+										<svg class="post-preview__overlay-icon"><use xlink:href="svg/svg.svg#icon-search"></use></svg>
+									</a>
+								</li>
+								
+							</ul>
+
+						</section>
+						</div>
+					</div>
+					
+				
+				</div>
+
+
+				
+				
+			
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				
+				<div class="copyright">
+					&copy; 2014-2015 
+					<a class="copyright__link" href="#">HeroesOverwatch.ru</a>
+				</div>
+
+				<div class="nav-footer">
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">Медиа</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Галерея</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Видео</a>
+						</li>
+					</ul>
+
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">Новости</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Overwatch</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Разное</a>
+						</li>
+					</ul>
+
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item nav-footer__item--title">
+							<a class="nav-footer__link" href="#">База знаний</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Герои</a>
+						</li>
+						<li class="nav-footer__item">
+							<a class="nav-footer__link" href="#">Карты</a>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="soc-links">
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-vk"></use></svg>
+						</a>
+					</li>
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-fb"></use></svg>
+						</a>
+					</li>
+					<li class="soc-links__item">
+						<a href="#" class="soc-links__link">
+							<svg class="soc-links__icon"><use xlink:href="svg/svg.svg#icon-inst"></use></svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+	</body>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script>
+		// //polyfill for browsers which doesn't support "object-fit" property
+		var objectFitImages=function(){"use strict";var e="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";var t=/(object-fit|object-position)\s*:\s*([^;$"'\s]+)/g;var i="object-fit"in document.createElement("i").style;var n=false;function r(e){var i=getComputedStyle(e).fontFamily;var n;var r={};while((n=t.exec(i))!==null){r[n[1]]=n[2]}return r}function o(t,i){var n=r(t);if(!n["object-fit"]||n["object-fit"]==="fill"){return}i=i||t.currentSrc||t.src;if(t.srcset){t.srcset=""}if(!t[e]){t.src=e;a(t)}t[e]=t[e]||{s:i};t.style.backgroundImage="url("+i+")";t.style.backgroundPosition=n["object-position"]||"center";t.style.backgroundRepeat="no-repeat";if(n["object-fit"].indexOf("scale-down")<0){t.style.backgroundSize=n["object-fit"].replace("none","auto")}else{if(!t[e].i){t[e].i=new Image;t[e].i.src=i}(function o(){if(t[e].i.naturalWidth){if(t[e].i.naturalWidth>t.width||t[e].i.naturalHeight>t.height){t.style.backgroundSize="contain"}else{t.style.backgroundSize="auto"}return}setTimeout(o,100)})()}}function a(t){var i={get:function(){return t[e].s},set:function(i){delete t[e].i;return o(t,i)}};Object.defineProperty(t,"src",i);Object.defineProperty(t,"currentSrc",{get:i.get})}function c(e){window.addEventListener("resize",f.bind(null,e))}function u(e){if(e.target.tagName==="IMG"){o(e.target)}}function f(e,t){if(i){return false}var r=!n&&!e;t=t||{};e=e||"img";if(typeof e==="string"){e=document.querySelectorAll("img")}else if(!e.length){e=[e]}for(var a=0;a<e.length;a++){o(e[a])}if(r){document.body.addEventListener("load",u,true);n=true;e="img"}if(t.watchMQ){c(e)}}return f}();
+		objectFitImages()
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>	
+</html>
